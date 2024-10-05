@@ -1,7 +1,6 @@
 const logotext = "Symphony Of Stars";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Symphony Of Stars",
 };
 
 const introdata = {
@@ -36,115 +35,79 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
-];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "  https://stsci-opo.org/STScI-01H44AY5ZTCV1NPB227B2P650J.png",
+        description: "Rho ophiuchi",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://stsci-opo.org/STScI-01GA6KNV1S3TP2JBPCDT8G826T.png",
+        description: "Carina Nebula",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://stsci-opo.org/STScI-01GA76RM0C11W977JRHGJ5J26X.png",
+        description: "Tarantula nebula",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://stsci-opo.org/STScI-01GFNN3PWJMY4RQXKZ585BC4QH.png",
+        description: "Pillars of creation",
         link: "#",
     },
 
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+   
 ];
-
-const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
-};
+const nebulaData = [
+    {
+        name: "Carina Nebula (NGC 3372)",
+        type: "Emission Nebula (H II region)",
+        location: "Constellation Carina, approximately 8,500 light-years away from Earth",
+        coordinates: "Right Ascension: 10h 45m | Declination: -59° 52′",
+        size: "Approximately 230 light-years across",
+        discovery: "Discovered in 1751 by French astronomer Nicolas Louis de Lacaille",
+        formation: "A massive star-forming region consisting of clouds of ionized gas (mainly hydrogen) illuminated by intense radiation from young, massive stars.",
+        keyFeatures: [
+            "Eta Carinae: One of the most massive stars known.",
+            "Homunculus Nebula: Surrounds Eta Carinae, formed by a massive stellar eruption.",
+            "Trumpler 14 and 16: Young star clusters within the nebula."
+        ],
+        starFormation: "Active star formation is ongoing, containing several young stars and proto-stars.",
+        notableFeatures: "The Mystic Mountain: A famous structure resembling a towering pillar of gas and dust.",
+        observations: "Visible light is blocked by dust in some regions, infrared observations reveal stars hidden behind dust clouds.",
+        scientificImportance: "Provides insights into the life cycle of massive stars and their effects on their surroundings.",
+        currentStatus: "An active region of star formation, constantly shaped by stellar winds and radiation.",
+        telescopicObservations: "Observed by Hubble and JWST."
+    },
+    {
+        name: "Ophiuchi Nebula (Rho Ophiuchi Cloud Complex)",
+        location: "Located about 400–460 light-years away in the constellation Ophiuchus.",
+        discovery: "Observed by various astronomers and studied with modern telescopes like Spitzer and Hubble.",
+        structure: "A dark nebula filled with gas and dust, along with active star-forming regions.",
+        size: "Spans around 14 light-years across.",
+        formation: "A cold, dense molecular cloud where gravity pulls gas and dust together, triggering the formation of new stars.",
+        stillInFormation: "Yes, the Ophiuchi Nebula is still an active star-forming region.",
+        composition: "Mostly hydrogen gas and dust, with traces of other elements.",
+        significance: "One of the closest star-forming regions to Earth, providing insights into early stellar evolution.",
+        images: "Captured by various observatories like Hubble and Spitzer.",
+        impactOnSpaceResearch: "Helps understand how stars and planets form from cold, dense clouds."
+    },
+    {
+        name: "Pillars of Creation",
+        location: "Eagle Nebula (M16), approximately 6,500 to 7,000 light-years away in the constellation Serpens.",
+        discovery: "First discovered by NASA's Hubble Space Telescope in 1995.",
+        structure: "Large clouds of cold molecular hydrogen gas and dust, sculpted into towering shapes by intense radiation.",
+        size: "The tallest of the pillars is about 4 light-years long.",
+        formation: "Formed through the process of star formation; new stars are forming as material contracts under gravity.",
+        stillInFormation: "Yes, but a supernova shockwave may have already destroyed the pillars.",
+        composition: "Primarily composed of hydrogen gas, with traces of heavier elements.",
+        significance: "An iconic example of star formation regions, providing insight into star birth.",
+        images: "Captured by Hubble with several iconic images released.",
+        impactOnSpaceResearch: "Helps understand the mechanisms of star birth and the lifecycle of stars."
+    }
+];
 
 const socialprofils = {
     github: "https://github.com",
@@ -157,10 +120,8 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
-    services,
     introdata,
-    contactConfig,
     socialprofils,
     logotext,
+    nebulaData,
 };

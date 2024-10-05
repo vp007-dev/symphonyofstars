@@ -1,16 +1,56 @@
-"use client";
-import React, { useEffect } from "react";
-import * as THREE from "three";
-import "./style.css";
+import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
-import { Link } from "react-router-dom";
 import StarfieldAnimation from "react-starfield-animation";
+import { Portfolio } from "../portfolio";
+import { ContactUs } from "../video";
+import { introdata, meta } from "../../content_option";
+import "./style.css";
 
 export const Home = () => {
   return (
     <HelmetProvider>
+      <header className="header">
+        <nav className="nav">
+          <ul className="nav-list">
+            <li className="nav-item">
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                activeClass="selected" /* This adds the `selected` class to the active section */
+              >
+                HOME
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="video"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                activeClass="selected"
+              >
+                MUSICAL BACKDROP
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="portfolio"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                activeClass="selected"
+              >
+                NEBULAS
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <section id="home" className="home">
         <StarfieldAnimation
           depth={500}
@@ -23,10 +63,10 @@ export const Home = () => {
         />
         <Helmet>
           <meta charSet="utf-8" />
-          <title> {meta.title}</title>
+          <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
+        <div className="intro_sec d-block d-lg-flex align-items-center">
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center mx-8">
             <div className="align-self-center">
               <div className="intro mx-auto">
@@ -50,6 +90,14 @@ export const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="video" className="video">
+        <ContactUs />
+      </section>
+
+      <section id="portfolio" className="portfolio">
+        <Portfolio />
       </section>
     </HelmetProvider>
   );
