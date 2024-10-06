@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   useLocation,
+// } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import AnimatedCursor  from "../hooks/AnimatedCursor";
 import "./App.css";
+import { Nebulaeinfo } from "../pages/NebulaeInfo";
+import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -21,6 +23,7 @@ const ScrollToTop = withRouter(_ScrollToTop);
 export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
+      
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
@@ -32,6 +35,9 @@ export default function App() {
         />
       </div>
       <ScrollToTop>
+      <Routes>
+        <Route exact path="../pages/NebulaeInfo" component={Nebulaeinfo} />
+       </Routes>
         <AppRoutes />
       </ScrollToTop>
     </Router>

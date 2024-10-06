@@ -6,6 +6,8 @@ import StarfieldAnimation from "react-starfield-animation";
 import { Portfolio } from "../portfolio";
 import { ContactUs } from "../video";
 import { introdata, meta } from "../../content_option";
+import { Nebulaeinfo } from "../NebulaeInfo";
+
 import "./style.css";
 
 export const Home = () => {

@@ -10,7 +10,7 @@ const introdata = {
         second: "Sit tight...",
         third: "Now you may start scrolling and Have your soul be calmed by the beauty of nature.",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "A Vibrant Experience Of Space",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -38,6 +38,7 @@ const worktimeline = [{
 
 
 const dataportfolio = [{
+        id : "1",
         img: "  https://stsci-opo.org/STScI-01H44AY5ZTCV1NPB227B2P650J.png",
         description: "Rho ophiuchi",
         link: "#",

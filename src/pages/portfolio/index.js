@@ -3,6 +3,11 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { Link } from 'react-router-dom'
+
+import { Nebulaeinfo } from "../NebulaeInfo";
+
+
 
 export const Portfolio = () => {
   return (
@@ -22,9 +27,14 @@ export const Portfolio = () => {
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
             return (
-              <div key={i} className="po_item">
+              <div key={i} className="po_item" >
+                
                 <img src={data.img} alt="" />
+                
                 <div className="content">
+                <Link to={"./NebulaeInfo"}>
+                    Know More
+                    </Link>
                   <p>{data.description}</p>
                 </div>
               </div>
