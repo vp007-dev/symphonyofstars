@@ -46,7 +46,7 @@ export const Home = () => {
                 className="nav-link"
                 activeClass="selected"
               >
-                NEBULAS
+                NEBULAES
               </Link>
             </li>
           </ul>
