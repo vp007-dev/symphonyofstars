@@ -3,11 +3,15 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { useParams } from "react-router-dom";
+
 // import { dataportfolio, meta } from "../../content_option";
 
 
 export const Nebulaeinfo = () => {
-    return (
+    const { id } = useParams();
+   const nebula = dataportfolio.find((n) => n.id === id);
+    return nebula ?(
         
       <HelmetProvider>
         
@@ -22,17 +26,14 @@ export const Nebulaeinfo = () => {
 
         </section> */}
         <div className="mb-5 po_items_ho">
-        {dataportfolio.map((data, i) => {
-            return(
-            <div key={id} className="po_item">
-                <img src={data.img} alt="" />
-            </div>
-            );
-        })}
+        <h2>{nebula.description}</h2>
+        <img src={nebula.img} alt={nebula.description} />
         </div>
 
 
       </HelmetProvider>
+    ) : (
+        <p>nebulae not found</p>
     );
   };
   

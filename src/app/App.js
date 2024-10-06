@@ -36,7 +36,8 @@ export default function App() {
       </div>
       <ScrollToTop>
       <Routes>
-        <Route exact path="../pages/NebulaeInfo" component={Nebulaeinfo} />
+        <Route exact path="/NebulaeInfo" element={<Nebulaeinfo />} />
+        <Route path="/nebula/:id" element={<Nebulaeinfo />} />
        </Routes>
         <AppRoutes />
       </ScrollToTop>

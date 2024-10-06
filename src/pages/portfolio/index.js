@@ -25,21 +25,34 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
+          <div className="po_items_ho">
+            {dataportfolio.map((data) => {
+              return(
+              <Link key={data.id} to={`/nebula/${data.id}`}>
+                <div className="po_item">
+                  <img src={data.img} alt={data.description} />
+                </div>
+              </Link>
+              );
+            })}
+          </div>
+
+
+          {/* {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item" >
                 
                 <img src={data.img} alt="" />
                 
                 <div className="content">
-                <Link to={"./NebulaeInfo"}>
+                <Link to={"/NebulaeInfo"}>
                     Know More
                     </Link>
                   <p>{data.description}</p>
                 </div>
               </div>
             );
-          })}
+          })} */}
         </div>
       </Container>
     </HelmetProvider>

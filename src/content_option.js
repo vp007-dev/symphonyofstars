@@ -44,16 +44,19 @@ const dataportfolio = [{
         link: "#",
     },
     {
+        id: "2",
         img: "https://stsci-opo.org/STScI-01GA6KNV1S3TP2JBPCDT8G826T.png",
         description: "Carina Nebula",
         link: "#",
     },
-    {
+    {   
+        id: "3",
         img: "https://stsci-opo.org/STScI-01GA76RM0C11W977JRHGJ5J26X.png",
         description: "Tarantula nebula",
         link: "#",
     },
     {
+        id: "4",
         img: "https://stsci-opo.org/STScI-01GFNN3PWJMY4RQXKZ585BC4QH.png",
         description: "Pillars of creation",
         link: "#",
